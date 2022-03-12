@@ -243,17 +243,56 @@ Apriori rules restrictions - support 0.05
 \end_layout
 
 \begin_layout Enumerate
-Apriori rules elements - each element is a combination of feature(coulmn)/value
- (binned value)
+\begin_inset Formula $Min_{support}=0.05$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Score function - 'lift' value
+\begin_inset Formula $Min_{confidence}=0$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Interestingness function - sort the rules the functions gets by their score
- and sum the top two rules score
+\begin_inset Formula $d$
+\end_inset
+
+- 'adults' data set.
+ (* data presets)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $score(r)=lift(v)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $I(d_{subset})-$
+\end_inset
+
+we sort 
+\begin_inset Formula $d_{subset}$
+\end_inset
+
+ by 
+\begin_inset Formula $score(r)$
+\end_inset
+
+ and take top 
+\begin_inset Formula $x$
+\end_inset
+
+rules.
+ 
+\begin_inset Formula $I(d_{subset})=\sum_{i\leq x}score(r_{i})$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
